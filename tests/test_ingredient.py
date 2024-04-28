@@ -28,5 +28,5 @@ class TestIngredient:
                              [(INGREDIENT_TYPE_SAUCE, name_souse, int_price),
                               (INGREDIENT_TYPE_FILLING, name_filling, float_price)])
     def test_get_type(self, ingredient_type, name, price):
-        ingredient_type = new_ingredient(ingredient_type, name, price).get_type()
-        assert ingredient_type == ingredient_type
+        ingredient = new_ingredient(ingredient_type, name, price).get_type()
+        assert ingredient == ingredient_type
